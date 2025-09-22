@@ -1,5 +1,6 @@
 package com.csahur.testmod;
 
+import com.csahur.testmod.block.ModBlocks;
 import com.csahur.testmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -36,6 +37,7 @@ public class TestMod {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -63,6 +65,10 @@ public class TestMod {
             event.accept(ModItems.JALLA);
             event.accept(ModItems.RAW_JALLA);
             event.accept(ModItems.EATABLE_DIAMOND);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.TEST_BLOCK);
         }
     }
 

@@ -1,7 +1,6 @@
 package com.csahur.testmod.item;
 
 import com.csahur.testmod.TestMod;
-import net.minecraft.world.damagesource.DamageEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -29,10 +28,11 @@ public class ModItems {
                     .food(new FoodProperties.Builder()
                             .nutrition(20)
                             .saturationModifier(4f)
-                            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 800, 1), 1.0F)
-                            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400, 10), 1.0F)
-                            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 400, 0), 0.8F)
-                            .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 400, 2), 1.0F)
+                            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 1000, 0), 1.0F)
+                            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 200, 1), 0.5F)
+                            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 10), 1.0F)
+                            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 300, 0), 1.0F)
+                            .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 1000, 2), 1.0F)
                             .alwaysEdible()
                             .build()
             )));
