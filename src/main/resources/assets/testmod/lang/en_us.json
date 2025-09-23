@@ -1,7 +1,14 @@
 {
   "item.testmod.jalla": "Jalla",
   "item.testmod.raw_jalla": "Raw Jalla",
-  "item.testmod.eatable_diamond": "Eatable Diamond",
+  "item.testmod.eatable_diamond": "§9Eatable §fDiamond",
+  "item.testmod.special_feather": "§dSpecial §fFeather",
+
+
   "block.testmod.test_block": "Test Block",
-  "block.testmod.test_ore": "Test Ore"
+  "block.testmod.test_ore": "Test Ore",
+
+
+  "creativetab.testmod.test_items": "Test Items",
+  "creativetab.testmod.test_blocks": "Test Blocks"
 }

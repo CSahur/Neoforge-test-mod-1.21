@@ -27,7 +27,7 @@ public class ModItems {
             ("eatable_diamond", () -> new Item(new Item.Properties()
                     .food(new FoodProperties.Builder()
                             .nutrition(20)
-                            .saturationModifier(4f)
+                            .saturationModifier(2f)
                             .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 1000, 0), 1.0F)
                             .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 200, 1), 0.5F)
                             .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 10), 1.0F)
@@ -36,6 +36,17 @@ public class ModItems {
                             .alwaysEdible()
                             .build()
             )));
+
+    public static final DeferredItem<Item> SPECIAL_Feather = ITEMS.register
+            ("special_feather", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(20)
+                            .saturationModifier(2f)
+                            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1000, 4), 1.0F)
+                            .effect(() -> new MobEffectInstance(MobEffects.SLOW_FALLING, 6000, 0), 1.0F)
+                            .alwaysEdible()
+                            .build()
+                    )));
 
 
 

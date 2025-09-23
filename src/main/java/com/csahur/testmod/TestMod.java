@@ -1,6 +1,7 @@
 package com.csahur.testmod;
 
 import com.csahur.testmod.block.ModBlocks;
+import com.csahur.testmod.item.ModCreativeModeTabs;
 import com.csahur.testmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -36,6 +37,8 @@ public class TestMod {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -65,6 +68,9 @@ public class TestMod {
             event.accept(ModItems.JALLA);
             event.accept(ModItems.RAW_JALLA);
             event.accept(ModItems.EATABLE_DIAMOND);
+            event.accept(ModItems.SPECIAL_Feather);
+            event.accept(ModBlocks.TEST_BLOCK);
+            event.accept(ModBlocks.TEST_ORE);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {

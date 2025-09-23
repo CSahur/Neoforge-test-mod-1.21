@@ -1,7 +1,14 @@
 {
   "item.testmod.jalla": "Jalla",
   "item.testmod.raw_jalla": "Roher Jalla",
-  "item.testmod.eatable_diamond": "Essbarer Diamant",
+  "item.testmod.eatable_diamond": "§9Essbarer §fDiamant",
+  "item.testmod.special_feather": "§dSpeziale §fFeder",
+
+
   "block.testmod.test_block": "Test Block",
-  "block.testmod.test_ore": "Test Erz"
+  "block.testmod.test_ore": "Test Erz",
+
+
+  "creativetab.testmod.test_items_tab": "Test Gegenstände",
+  "creativetab.testmod.test_Blocks_tab": "Test Blöcke"
 }
