@@ -1,6 +1,7 @@
 package com.csahur.testmod.item;
 
 import com.csahur.testmod.TestMod;
+import com.csahur.testmod.item.custom.ChiselItem;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -14,11 +15,7 @@ public class ModItems {
 
     public static final DeferredItem<Item> JALLA = ITEMS.register
             ("jalla", () -> new Item(new Item.Properties()
-                    .food(new FoodProperties.Builder()
-                            .nutrition(7)
-                            .saturationModifier(0.5f)
-                            .build()
-                    )));
+                    ));
     public static final DeferredItem<Item> RAW_JALLA = ITEMS.register
             ("raw_jalla", () -> new Item(new Item.Properties()));
 
@@ -51,7 +48,8 @@ public class ModItems {
                     )));
 
 
-
+    public static final DeferredItem<Item> CHISEL = ITEMS.register
+            ("chisel", () -> new ChiselItem(new Item.Properties().durability(32)));
 
     public static void register(IEventBus eventbus)
     {
