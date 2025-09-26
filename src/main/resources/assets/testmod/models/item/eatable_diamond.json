@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "testmod:item/eatable_diamond"
+    "layer0": "minecraft:item/diamond"
   }
 }

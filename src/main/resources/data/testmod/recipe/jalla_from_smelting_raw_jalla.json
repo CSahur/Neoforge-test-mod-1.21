@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 1,
+  "experience": 1,
+  "group": "eatablediamond",
+  "ingredient": {
+    "item": "testmod:raw_jalla"
+  },
+  "result": {
+    "id": "testmod:jalla"
+  }
+}

@@ -42,12 +42,13 @@ public class ModItems {
                     .food(new FoodProperties.Builder()
                             .nutrition(20)
                             .saturationModifier(2f)
-                            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1000, 4), 1.0F)
-                            .effect(() -> new MobEffectInstance(MobEffects.SLOW_FALLING, 6000, 0), 1.0F)
+                            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1000, 1), 1.0F)
+                            .effect(() -> new MobEffectInstance(MobEffects.SLOW_FALLING, 400, 0), 0.5F)
+                            .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 200, 254), 0.1F)
+                            .effect(() -> new MobEffectInstance(MobEffects.LEVITATION, 3, 254), 1.0F)
                             .alwaysEdible()
                             .build()
                     )));
-
 
 
 

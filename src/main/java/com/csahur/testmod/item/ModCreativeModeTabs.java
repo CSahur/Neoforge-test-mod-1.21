@@ -19,7 +19,7 @@ public class ModCreativeModeTabs {
 
     public static final Supplier<CreativeModeTab> TEST_ITEMS_TAB = CREATIVE_MODE_TAB.register("test_items_tab",
             () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModItems.JALLA.get()))
+                    .icon(() -> new ItemStack(ModItems.SPECIAL_Feather.get()))
                     .title(Component.translatable("creativetab.testmod.test_items"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.JALLA);

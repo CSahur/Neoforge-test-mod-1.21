@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 20,
+  "experience": 0.1,
+  "group": "jalla",
+  "ingredient": {
+    "item": "testmod:test_ore"
+  },
+  "result": {
+    "id": "testmod:raw_jalla"
+  }
+}
