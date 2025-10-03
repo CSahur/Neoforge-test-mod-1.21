@@ -27,6 +27,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.EATABLE_DIAMOND);
                         output.accept(ModItems.SPECIAL_Feather);
                         output.accept(ModItems.CHISEL);
+                        output.accept(ModItems.LAUNCHER);
                     })
                     .build());
 

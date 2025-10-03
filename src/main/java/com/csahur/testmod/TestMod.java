@@ -66,12 +66,8 @@ public class TestMod {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.JALLA);
-            event.accept(ModItems.RAW_JALLA);
             event.accept(ModItems.EATABLE_DIAMOND);
             event.accept(ModItems.SPECIAL_Feather);
-            event.accept(ModBlocks.TEST_BLOCK);
-            event.accept(ModBlocks.TEST_ORE);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {

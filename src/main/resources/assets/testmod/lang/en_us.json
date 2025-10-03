@@ -4,6 +4,7 @@
   "item.testmod.eatable_diamond": "§9Eatable §fDiamond",
   "item.testmod.special_feather": "§dSpecial §fFeather",
   "item.testmod.chisel": "§dChisel",
+  "item.testmod.launcher": "§dLauncher",
 
   "block.testmod.test_block": "Test Block",
   "block.testmod.test_ore": "Test Ore",
